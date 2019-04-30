@@ -1,0 +1,54 @@
+.exclusive
+	margin-bottom: 30px
+.exclusive_logo
+	width: 450px
+	margin: 10px auto
+	display: flex
+	justify-content: space-between
+.exclusive_logo-img
+	display: block
+	width: 130px
+	height: 100px
+	transition: all .2s cubic-bezier(0,0,.58,1)
+	&:hover
+		opacity: .7
+	a
+		font-size: 0
+		display: block
+		height: 100%
+
+.exclusive_logo-img--jotul
+	background: url('/img/jotul.jpg') no-repeat transparent center
+	background-size: 130px 100px
+.exclusive-_logo-img--morso
+	background: url('/img/morso.jpg') no-repeat transparent center
+	background-size: 130px 100px
+.exclusive_logo-img--scan
+	background: url('/img/scan.jpg') no-repeat transparent center
+	background-size: 130px 100px
+
+.main-category-item
+	cursor: pointer
+	transition: all .5s cubic-bezier(.3,.1,.58,1)
+	&:hover
+		.main-category-item-title
+			color: rgba(255,255,255,.85)
+			background: rgba(0,0,0,.7)
+			text-decoration: none
+		.main-category-item-img
+			opacity: .9
+
+	.section-text
+	p
+		margin: 0 0 1em 0
+
+@media only screen and (max-width : 500px)
+	.exclusive_logo
+		width: 100%
+		flex-wrap: wrap
+		justify-content: space-around
+	.exclusive_logo-img
+		display: block
+		width: 100px
+		height: 77px
+		background-size: cover

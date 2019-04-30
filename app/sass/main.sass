@@ -10,10 +10,10 @@
 	color: #fff
 
 body
-	font-size: 16px
+	font-size: 14px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
+	line-height: 14px
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
@@ -37,6 +37,67 @@ body
 
 b, strong
 	font-weight: bold
+
+.title-line
+	font-family: 'Roboto Condensed',sans-serif
+	font-size: 1.2em
+	font-weight: 400
+	color: rgb(51, 51, 51)
+	text-transform: uppercase
+	text-align: center
+	letter-spacing: .2em
+	line-height: 1.4
+	margin-top: 5px
+	width: 98%
+	margin: 20px auto
+	overflow: hidden
+	&::before
+		content: ""
+		vertical-align: top
+		display: inline-block
+		width: 50%
+		height: .65em
+		border-bottom: 1px solid #ccc
+		margin: 0 2% 0 -55%
+	&:after
+		content: ""
+		vertical-align: top
+		display: inline-block
+		width: 50%
+		height: .65em
+		border-bottom: 1px solid #ccc
+		margin: 0 -55% 0 2%
+
+.content
+	max-width: 1170px
+	padding-left: 15px
+	padding-right: 15px
+	margin-left: auto
+	margin-right: auto
+
+.md-50
+	margin-top: 50px
+	margin-bottom: 50px
+
+
+
+
+@media only screen and (max-width : 500px)
+	.title-line
+		font-size: 1.1em
+		&::before,
+		&:after
+			display: none
+
+
+
+
+@import "_header"
+@import "_menu-btn"
+@import "_slider"
+@import "_animated"
+@import "_exclusive"
+@import "_maingoods"
 
 
 

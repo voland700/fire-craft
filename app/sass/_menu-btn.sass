@@ -1,0 +1,111 @@
+@import "vars"
+$basic-icon-color: #2b383e
+$accent-icon-color: #fff
+
+//transitions mixin
+@mixin transition-mix($property: all, $duration: 0.2s, $timing: linear, $delay: 0s)
+	transition-property: $property
+	transition-duration: $duration
+	transition-timing-function: $timing
+	transition-delay: $delay
+
+
+//position absolute mixin
+@mixin position-absolute ($top: null, $left: null, $right: null, $bottom: null)
+	position: absolute
+	top: $top
+	left: $left
+	right: $right
+	bottom: $bottom
+
+
+/* icon basic styles !!!YOU NEED THEM  */
+//menu icon variables
+$icon-width: 40px
+$icon-height: 25px
+
+$bar-width: 5px
+$bar2-position: $bar-width*2
+$bar3-position: $bar-width*4
+
+.menu-icon
+	height: $icon-height
+	cursor: pointer
+	width: $icon-width
+	position: relative
+	overflow: hidden
+
+	&:before,
+	&:after
+		@include transition-mix
+		content: ''
+		display: block
+		width: 4px
+		height: 28px
+		border-radius: 10px
+		transform-origin: center center
+		background-color: $basic-icon-color
+
+
+	&:before
+		@include position-absolute($top: 0, $left: 18px)
+		transform: rotate(-45deg)
+
+
+	&:after
+		@include position-absolute($top: 0, $right: 18px)
+		transform: rotate(45deg)
+
+	.bar
+		@include transition-mix($delay: 0.2s)
+		width: 100%
+		height: $bar-width
+		background-color: $basic-icon-color
+		border-radius: 20px
+
+		&-1
+			@include position-absolute($top: 0, $left: 0)
+
+		&-2
+			@include position-absolute($top: $bar2-position, $left: 0)
+
+
+		&-3
+			@include position-absolute($top: $bar3-position, $left: 0)
+
+	&.opened
+		.bar
+			@include transition-mix
+
+
+		&:before,
+		&:after
+			@include transition-mix($delay: 0.2s)
+
+//icon-3 styles
+.menu-icon-3
+
+	&:before
+		transform: rotate(-90deg)
+
+
+	&:after
+		transform: rotate(90deg)
+
+	&:before,
+	&:after
+		top: -2px
+	&.opened
+		&:before
+			transform: rotate(-45deg)
+		&:after
+			transform: rotate(45deg)
+		&:before,
+		&:after
+			top: 0px
+		.bar
+			opacity: 0
+			&-1
+				top: $bar2-position
+			&-3
+				top: $bar2-position

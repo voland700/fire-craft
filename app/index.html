@@ -11,30 +11,202 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
-	
+
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body>
+	<header>
+		<div class="header__top">
+			<div class="header__top-wrap">
+				<div class="header__top-adres">г. Москва, 38 км. МКАД, владение 4-Б офис 210.</div>
+				<div class="header__top-phone"><a href="tel:+74954236964">+7 (495) 423-69-64</a><a href="tel:+79099928462">+7 (909) 992-84-62</a>
+				</div>
+			</div>
+		</div>
+		<div class="header__content-wrap">
+			<div class="header__content">
+				<a href="#" class="hader__logo-link">
+					<div class="logo-img">
+						<svg x="0px" y="0px" viewBox="0 0 734 734" style="enable-background:new 0 0 734 734;" xml:space="preserve">
+							<path d="M367.2,727C247.8,607.3,128.1,487.2,8.2,367c0.9-1,1.6-1.9,2.4-2.7C128.8,246.1,247,127.9,365.2,9.7c0.5-0.5,1-0.9,1.4-1.4
+							c1.3-1.4,2.5-1.3,3.8,0.1c0.7,0.8,1.5,1.5,2.3,2.3c117.5,117.5,235,235,352.5,352.5c1.1,1.1,2.2,2.3,3.2,3.3
+							c-24.2,24.2-48.2,48.2-72.5,72.5c-95.7-95.7-191.6-191.6-287.2-287.2c-72.1,72.1-143.9,143.9-215.5,215.5
+							c23.8,23.8,47.9,47.9,72.2,72.2c47.7-47.7,96-96,144.6-144.6c0.7,1.4,1.3,2.1,1.5,2.9c0.2,0.9,0.1,1.9,0.1,2.8
+							c0,44.5,0,89.1,0.1,133.6c0,3-0.8,5-2.9,7.1c-22.7,22.6-45.4,45.3-68,67.9c-1,1-2,2.1-3.1,3.3c47.6,47.6,95,95,142,142
+							C415.4,678.7,391.5,702.7,367.2,727z" />
+						</svg>
+					</div>
+					<div class="logo-title-wrap">
+						<div class="logo-title">Fire-Craft.Ru</div>
+						<div class="logo-subtitle">Скандинавсие камины</div>
+					</div>
+				</a>
 
-	<!-- Custom HTML -->
+				<div class="hader__nav-btn">
+					<div class="menu-icon menu-icon-3" id="menuBtn">
+						<div class="bar bar-1"></div>
+						<div class="bar bar-2"></div>
+						<div class="bar bar-3"></div>
+					</div>
+				</div>
 
-	<div class="container">
 
-	
+				<ul class="hader__nav-list" id="navList">
+					<li class="hader__nav-item"><a href="#" class="hader__nav-link">О нас</a></li>
+					<li class="hader__nav-item"><a href="#" class="hader__nav-link">Гарантия</a></li>
+					<li class="hader__nav-item"><a href="#" class="hader__nav-link">Доставка</a></li>
+					<li class="hader__nav-item"><a href="#" class="hader__nav-link">Дилерам</a></li>
+					<li class="hader__nav-item"><a href="#" class="hader__nav-link">Купить</a></li>
+					<li class="hader__nav-item"><a href="#" class="hader__nav-link">Контакты</a></li>
+				</ul>
 
+			</div>
+		</div>
+		<div class="header__search-wrap">
+			<div class="header__search">
+				<div class="header__btn-wrap">
+					<a href="#" class="header__btn">Каталог</a>
+					<a href="#" class="header__btn">Где купить</a>
+				</div>
+				<div class="search_wrap">
+					<form action="/search/index.php" class="form-wrap">
+						<input id="title-search-input" type="text" name="q" value="" autocomplete="off" class="search-form" placeholder="Ищем...">
+						<button type="submit" name="s" class="search-btn">Поиск</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+<div class="slider">
+	<div class="owl-carousel slider-main">
+
+
+		<section class="slider-item" style="background-image: url('../img/slider/fr-1.jpg')">
+			<h3 class="slider-item-title">Скандинавское ремесло</h3>
+			<div class="slider-wrap-btn">
+				<a href="#" class="slider-btn">Каталог</a>
+				<a href="#" class="slider-btn">Где купить</a>
+			</div>
+		</section>
+		<section class="slider-item" style="background-image: url('../img/slider/fr-2.jpg')">
+			<h3 class="slider-item-title">Традиции, качество</h3>
+			<div class="slider-wrap-btn">
+				<a href="#" class="slider-btn">Каталог</a>
+				<a href="#" class="slider-btn">Где купить</a>
+			</div>
+		</section>
+		<section class="slider-item" style="background-image: url('../img/slider/fr-3.jpg')">
+			<h3 class="slider-item-title">Печи, камины, аксессуары</h3>
+			<div class="slider-wrap-btn">
+				<a href="#" class="slider-btn">Каталог</a>
+				<a href="#" class="slider-btn">Где купить</a>
+			</div>
+		</section>
 	</div>
+</div>
+
+<div class="container md-50">
+	<section class="exclusive">
+		<h1 class="title-line">Эксклюзивный представитель <span>компаний</span></h1>
+		<div class="exclusive_logo">
+			<div class="exclusive_logo-img exclusive_logo-img--jotul">
+				<a href="#">Jotul</a>
+			</div>
+			<div class="exclusive_logo-img exclusive-_logo-img--morso">
+				<a href="#">Morso</a>
+			</div>
+			<div class="exclusive_logo-img exclusive_logo-img--scan">
+				<a href="#">Scan</a>
+			</div>
+		</div>
+	</section>
+	<div class="maingoods__wrap">
+		<section class="maingoods__item">
+			<h3 class="maingoods__title"><a href="#" class="maingoods__link">Печи</a></h3>
+			<div class="maingoods__img-wrap">
+				<img src="../img/category/pechi.jpg" alt="Печи" class="maingoods__img">
+			</div>
+			<div class="maingoods__bottom"><span>&#10142;</span></div>
+		</section>
+		<section class="maingoods__item">
+			<h3 class="maingoods__title"><a href="#" class="maingoods__link">Камины</a></h3>
+			<div class="maingoods__img-wrap">
+				<img src="../img/category/kaminy.jpg" alt="Камины" class="maingoods__img">
+			</div>
+			<div class="maingoods__bottom"><span>&#10142;</span></div>
+		</section>
+		<section class="maingoods__item">
+			<h3 class="maingoods__title"><a href="#" class="maingoods__link">Аксессуары</a></h3>
+			<div class="maingoods__img-wrap">
+				<img src="../img/category/acses.jpg" alt="Аксессуары" class="maingoods__img">
+			</div>
+			<div class="maingoods__bottom"><span>&#10142;</span></div>
+		</section>
+	</div>
+
+<section class="dignity">
+	<h2 class="title-line">Наши продукты неподвласны времени</h2>
+	<p class="dignity-txt">
+		Связывают прошлое с настоящим и гармоничны с архитектурной эстетикой современных интерьеров. Норвежское ремесло обработки чугуна, а также функциональный и современный дизайн приводят к тому, что наши камины выделяются на фоне краткосрочных тенденций.
+	</p>
+	<div class="row">
+		<section class="col-md-4 dignity-item">
+			<h3 class="dignity-item-title">Покупка камина</h3>
+			<div class="dignity-item-txt" style="height: 247px;">
+				У Jøtul есть самая широкая дистрибуционная сеть, а также программа обучения, которая обеспечивает высокий уровень знаний продавцов. Центр обучения находится в Норвегии, но ежегодно проводятся также семинары в большей части стран, в которых продаеются продукты Jøtul.
+			</div>
+			<a href="/where-to-buy/" class="dignity-item-link">Точки продаж</a>
+		</section>
+		<section class="col-md-4 dignity-item">
+			<h3 class="dignity-item-title">Почему чугун</h3>
+			<div class="dignity-item-txt" style="height: 247px;">
+				Чугун обладает экстремальными свойствами, благодаря которым это делает его подходящим материалом для производства каминов. Но что такое чугун и почему в Jøtul мы продолжаем поддерживать его Норвежскую традицию?
+			</div>
+			<a href="/goods-description/" class="dignity-item-link">Описание изделий</a>
+		</section>
+		<section class="col-md-4 dignity-item">
+			<h3 class="dignity-item-title">Установка камина</h3>
+			<div class="dignity-item-txt" style="height: 247px;">
+				Не сложно приобрести камин или дровяную печь, но есть некоторые нюансы, которые нужно знать перед тем как приступить к покупке. Ниже ты узнаешь больше о том, как купить камин и куда обратиться за помощью, а также найдёшь ответы на свои вопросы.
+			</div>
+			<a href="/where-to-buy/" class="dignity-item-link">Услуги монтажа</a>
+		</section>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div style="hight: 900px"></div>
 
 	<script src="js/scripts.min.js"></script>
 
