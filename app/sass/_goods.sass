@@ -1,0 +1,78 @@
+@import "vars"
+
+.goods__wrap
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+
+.goods__item
+	width: calc(25% - 15px)
+	transition: all .27s cubic-bezier(.3,.1,.58,1)
+.goods__item-picture
+	width: 100%
+	position: relative
+.goods__item-img
+	display: block
+	width: 90%
+	height: 90%
+	object-fit: contain
+	margin: 0 auto
+.goods__discount
+	position: absolute
+	bottom: 10px
+	right: 0
+	width: 60px
+	height: 60px
+	background: url(/img/catalog/disc.png) no-repeat center
+	background-size: contain
+	color: #fff
+	text-align: center
+	text-shadow: 0 1px 0 #2e3a40
+	//font-weight: bold
+	font-size: 1.4em
+	line-height: 60px
+	//letter-spacing: .2em
+
+.goods_leibl-hit,
+.goods_leibl-offer,
+.goods_leibl-new
+	display: block
+	width: 150px
+	height: 30px
+	position: absolute
+	right: 0
+	color: #ffffff
+	font-size: .9em
+	line-height: 30px
+	text-align: center
+	text-transform: uppercase
+	box-sizing: border-box
+	border-radius: 3px
+	border: 1px solid $bgdarck
+	background-color: $bgdarck
+	margin-bottom: 3px
+
+
+
+.goods__item-title
+	font-family: 'Roboto Condensed',sans-serif
+	font-size: 1.1em
+	line-height: 1.3em
+	font-weight: 400
+	text-align: center
+	text-transform: uppercase
+	letter-spacing: .2em
+	margin-bottom: 10px
+.goods__item-link
+	color: #777
+  text-decoration: none
+  transition: all .27s cubic-bezier(.3,.1,.58,1)
+.goods__item-price-old,
+.goods__item-price
+	text-align: center
+	margin-bottom: 5px
+	font-style: italic
+.goods__item-price-old
+	text-decoration: line-through
