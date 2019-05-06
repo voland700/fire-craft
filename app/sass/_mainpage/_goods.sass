@@ -5,11 +5,13 @@
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
+	margin-bottom: 50px
 
 
 .goods__item
 	width: calc(25% - 15px)
-	transition: all .27s cubic-bezier(.3,.1,.58,1)
+	transition: $trans
+	cursor: pointer
 .goods__item-picture
 	width: 100%
 	position: relative
@@ -19,6 +21,7 @@
 	height: 90%
 	object-fit: contain
 	margin: 0 auto
+	z-index: 1
 .goods__discount
 	position: absolute
 	bottom: 10px
@@ -27,32 +30,37 @@
 	height: 60px
 	background: url(/img/catalog/disc.png) no-repeat center
 	background-size: contain
+	font-family: 'Roboto Condensed Bold',sans-serif
 	color: #fff
 	text-align: center
 	text-shadow: 0 1px 0 #2e3a40
-	//font-weight: bold
 	font-size: 1.4em
 	line-height: 60px
-	//letter-spacing: .2em
+
 
 .goods_leibl-hit,
 .goods_leibl-offer,
 .goods_leibl-new
 	display: block
-	width: 150px
-	height: 30px
+	width: 140px
+	height: 28px
 	position: absolute
 	right: 0
 	color: #ffffff
-	font-size: .9em
-	line-height: 30px
+	font-size: .8em
+	line-height: 28px
 	text-align: center
 	text-transform: uppercase
 	box-sizing: border-box
 	border-radius: 3px
-	border: 1px solid $bgdarck
-	background-color: $bgdarck
 	margin-bottom: 3px
+	z-index: 10
+.goods_leibl-hit
+	background-color: $lider
+.goods_leibl-offer
+	background-color: $offer
+.goods_leibl-new
+	background-color: $new
 
 
 
@@ -63,12 +71,12 @@
 	font-weight: 400
 	text-align: center
 	text-transform: uppercase
-	letter-spacing: .2em
+	letter-spacing: .1em
 	margin-bottom: 10px
 .goods__item-link
 	color: #777
-  text-decoration: none
-  transition: all .27s cubic-bezier(.3,.1,.58,1)
+	text-decoration: none
+	transition: all .27s cubic-bezier(.3,.1,.58,1)
 .goods__item-price-old,
 .goods__item-price
 	text-align: center
@@ -76,3 +84,22 @@
 	font-style: italic
 .goods__item-price-old
 	text-decoration: line-through
+
+.goods__item:hover
+	.goods__item-img
+		opacity: .9
+	.goods__item-link
+		color: $accent
+		text-decoration: none
+
+@media only screen and (max-width : 992px)
+	.goods__item
+		width: calc(50% - 15px)
+	.goods__item-title
+		font-size: 1.2em
+@media only screen and (max-width :500px)
+	.goods__item
+		width: 100%
+	.goods__item-title
+		max-width: 360px
+		margin: 0 auto
