@@ -1,24 +1,31 @@
 {
-  "name": "optimizedhtml",
-  "version": "4.0.0",
-  "description": "OptimizedHTML 4 - Start HTML Template",
+  "name": "gulp_sass",
+  "version": "1.0.0",
+  "description": "lessonind gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign Master",
+  "author": "Max Volcov",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.5",
-    "gulp": "^4.0.1",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^4.2.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.1.1",
+    "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-dest": "^0.2.3",
+    "gulp-imagemin": "^5.0.3",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-rsync": "0.0.8",
     "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "del": "^4.0.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-pngquant": "^7.0.0"
   }
 }
